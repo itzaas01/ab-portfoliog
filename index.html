@@ -1,132 +1,861 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VELOUR | Premium Luxury Fashion</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom Config -->
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            400: '#D4AF37',
+                            500: '#C5A028',
+                            600: '#AA8B1E',
+                        },
+                        luxury: {
+                            black: '#050505',
+                            dark: '#0a0a0a',
+                            gray: '#1a1a1a'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Inter"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        / Custom Scrollbar /
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #050505; }
+        ::-webkit-scrollbar-thumb { background: #333; border-radius: 3px; }
+        ::-webkit-scrollbar-thumb:hover { background: #D4AF37; }
+
+        / Animations /
+        .fade-in-up { animation: fadeInUp 0.8s ease-out forwards; opacity: 0; transform: translateY(20px); }
+        @keyframes fadeInUp { to { opacity: 1; transform: translateY(0); } }
+        
+        .glass { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .dark .glass { background: rgba(0, 0, 0, 0.5); border: 1px solid rgba(255, 255, 255, 0.05); }
+
+        .text-gold-gradient { background: linear-gradient(45deg, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+
+        / Product Hover Overlay /
+        .product-card .overlay { opacity: 0; transition: all 0.4s ease; }
+        .product-card:hover .overlay { opacity: 1; transform: translateY(0); }
+        
+        / Loader /
+        .loader { border-top-color: #D4AF37; -webkit-animation: spinner 1.5s linear infinite; animation: spinner 1.5s linear infinite; }
+        @keyframes spinner { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+    
+
+
+
+    
+    
+
+
+        
+
+
+    
+
+
+
+    
+    
+        
+        
+            
+        
+
+        
+        
+            VELOUR
+        
+
+        
+        
+
+
+            Home
+            Collection
+            New Arrivals
+            Best Sellers
+            About
+        
+
+
+
+        
+        
+
+
+            
+            
+                
+                0
+            
+            
+                
+                0
+            
+            
+            
+        
+
+
+    
+
+    
+    
+
+
+        
+
+
+        
+        
+        
+        
+
+
+            
+
+The New Era of Streetwear
+
+
+            
+
+
+                Redefine
+Luxury
+            
+
+
+            
+
+
+                Shop Collection
+                New Arrivals
+            
+
+
+        
+
+
+        
+        
+        
+
+
+            
+        
+
+
+    
+
+
+
+    
+    
+
+
+        
+
+
+            
+
+
+                
+                
+
+T-Shirts
+
+
+            
+
+
+            
+
+
+                
+                
+
+Jeans
+
+
+            
+
+
+            
+
+
+                
+                
+
+Hoodies
+
+
+            
+
+
+            
+
+
+                
+                
+
+Shirts
+
+
+            
+
+
+            
+
+
+                
+                
+
+Jackets
+
+
+            
+
+
+        
+
+
+    
+
+
+
+    
+    
+
+
+        
+
+
+            
+
+
+                
+
+
+                    
+
+New Arrivals
+
+Add a premium streetwear shop section to the website.
+
+
+
+Create two main collections:
+
+
+
+1. Baggy Jeans Collection
+
+2. Aesthetic Oversized Shirts Collection
+
+
+
+Add product cards with images, ratings, wishlist button and Indian Rupee prices.
+
+
+
+Products:
+
+
+
+- Shadow Baggy Jeans – ₹2,299
+
+- Vintage Washed Baggy Jeans – ₹2,199
+
+- Ice Blue Baggy Jeans – ₹2,399
+
+- Aesthetic Wave Shirt – ₹1,799
+
+- Ink Bloom Shirt – ₹1,999
+
+- Neutral Texture Shirt – ₹1,799
+
+
+
+Replace all USD currency with Indian Rupees (₹).
+
+
+
+Keep the black and gold luxury theme, mobile responsive design, premium animations and modern streetwear aesthetic.
+
+
+
+Add a WhatsApp floating button and a Best Sellers section.
+
+Add a premium streetwear shop section to the website.
+
+
+
+Create two main collections:
+
+
+
+1. Baggy Jeans Collection
+
+2. Aesthetic Oversized Shirts Collection
+
+
+
+Add product cards with images, ratings, wishlist button and Indian Rupee prices.
+
+
+
+Products:
+
+
+
+- Shadow Baggy Jeans – ₹2,299
+
+- Vintage Washed Baggy Jeans – ₹2,199
+
+- Ice Blue Baggy Jeans – ₹2,399
+
+- Aesthetic Wave Shirt – ₹1,799
+
+- Ink Bloom Shirt – ₹1,999
+
+- Neutral Texture Shirt – ₹1,799
+
+
+
+Replace all USD currency with Indian Rupees (₹).
+
+
+
+Keep the black and gold luxury theme, mobile responsive design, premium animations and modern streetwear aesthetic.
+
+
+
+Add a WhatsApp floating button and a Best Sellers section.
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
 <meta charset="UTF-8">
+
+<title>VELOUR Startup</title>
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Editor Portfolio</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
 
 <style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, sans-serif;
-}
 
-body{
-    overflow:hidden;
-    background:linear-gradient(135deg,#000,#111,#1c1c1c);
-    height:100vh;
-}
+body{background:#050505;color:white;font-family:Arial;}
 
-/* Background Glow */
-.bg{
-    position:fixed;
-    width:100%;
-    height:100%;
-    background:
-    radial-gradient(circle at 20% 20%, rgba(255,140,0,.25), transparent 30%),
-    radial-gradient(circle at 80% 80%, rgba(255,215,0,.2), transparent 30%);
-}
+.card{background:#111;padding:15px;border-radius:15px;transition:0.3s}
 
-/* Character */
-.character{
-    width:180px;
-    height:180px;
-    border-radius:50%;
-    background:linear-gradient(135deg,#ff8c00,#ffd700);
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-50%);
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:70px;
-    cursor:grab;
-    box-shadow:0 0 40px rgba(255,165,0,.5);
-    transition:opacity .8s;
-}
+.card:hover{transform:scale(1.03)}
 
-.character.hidden{
-    opacity:0;
-    pointer-events:none;
-}
+.gold{color:#D4AF37}
 
-/* Portfolio Content */
-.portfolio{
-    position:absolute;
-    width:100%;
-    height:100%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    flex-direction:column;
-    color:white;
-    opacity:0;
-    transition:1s;
-}
-
-.portfolio.show{
-    opacity:1;
-}
-
-h1{
-    font-size:3rem;
-}
-
-p{
-    margin-top:10px;
-    color:#ccc;
-}
 </style>
+
 </head>
+
 <body>
 
-<div class="bg"></div>
+<!-- HEADER -->
 
-<div class="character" id="char">
-    🎬
+<div class="p-4 flex justify-between border-b border-gray-700">
+
+<h1 class="text-2xl font-bold gold">VELOUR</h1>
+
+<button onclick="openCart()">🛒 <span id="count">0</span></button>
+
 </div>
 
-<div class="portfolio" id="portfolio">
-    <h1>Aslam Khan</h1>
-    <p>Video Editor & Photographer</p>
+<!-- PRODUCTS -->
+
+<div class="grid md:grid-cols-3 gap-4 p-4">
+
+<div class="card">
+
+<h3>Shadow Baggy Jeans</h3>
+
+<p>₹2299</p>
+
+<button onclick="add('Shadow Jeans',2299)" class="bg-white text-black px-3 py-1 mt-2 rounded">Add</button>
+
+</div>
+
+<div class="card">
+
+<h3>Ice Blue Jeans</h3>
+
+<p>₹2399</p>
+
+<button onclick="add('Ice Blue Jeans',2399)" class="bg-white text-black px-3 py-1 mt-2 rounded">Add</button>
+
+</div>
+
+<div class="card">
+
+<h3>Ink Bloom Shirt</h3>
+
+<p>₹1999</p>
+
+<button onclick="add('Ink Bloom Shirt',1999)" class="bg-white text-black px-3 py-1 mt-2 rounded">Add</button>
+
+</div>
+
+</div>
+
+<!-- CART -->
+
+<div id="cart" class="fixed right-0 top-0 w-80 h-full bg-black border-l border-gray-700 p-4 hidden">
+
+<h2 class="text-xl mb-3">Cart</h2>
+
+<div id="items"></div>
+
+<p class="mt-4">Total: ₹<span id="total">0</span></p>
+
+<button onclick="pay()" class="bg-white text-black w-full mt-4 py-2 rounded">
+
+Pay with UPI
+
+</button>
+
+<a id="wa" class="block text-center mt-3 text-green-400">
+
+Order on WhatsApp
+
+</a>
+
+<button onclick="closeCart()" class="mt-3 text-red-400">Close</button>
+
 </div>
 
 <script>
-const char = document.getElementById("char");
-const portfolio = document.getElementById("portfolio");
 
-let isDragging = false;
-let offsetX = 0;
-let offsetY = 0;
+let cart=[]
 
-char.addEventListener("pointerdown",(e)=>{
-    isDragging = true;
-    offsetX = e.clientX - char.offsetLeft;
-    offsetY = e.clientY - char.offsetTop;
-});
+let total=0
 
-document.addEventListener("pointermove",(e)=>{
-    if(!isDragging) return;
+function add(name,price){
 
-    char.style.left = (e.clientX - offsetX + 90) + "px";
-    char.style.top = (e.clientY - offsetY + 90) + "px";
-});
+cart.push({name,price})
 
-document.addEventListener("pointerup",()=>{
-    isDragging = false;
-});
+total+=price
 
-char.addEventListener("click",()=>{
-    char.classList.add("hidden");
+document.getElementById("count").innerText=cart.length
 
-    setTimeout(()=>{
-        portfolio.classList.add("show");
-    },700);
-});
+render()
+
+}
+
+function render(){
+
+document.getElementById("items").innerHTML =
+
+cart.map(i=>`<div>${i.name} - ₹${i.price}</div>`).join("")
+
+document.getElementById("total").innerText=total
+
+document.getElementById("wa").href =
+
+`https://wa.me/91XXXXXXXXXX?text=Order: ${cart.map(i=>i.name).join(", ")} Total ₹${total}`
+
+}
+
+function openCart(){
+
+document.getElementById("cart").style.display="block"
+
+}
+
+function closeCart(){
+
+document.getElementById("cart").style.display="none"
+
+}
+
+function pay(){
+
+if(cart.length===0){
+
+alert("Cart empty")
+
+return
+
+}
+
+let options={
+
+key:"YOUR_RAZORPAY_KEY",
+
+amount: total*100,
+
+currency:"INR",
+
+name:"VELOUR",
+
+description:"Luxury Order",
+
+handler:function(response){
+
+alert("Payment Success 🎉 Order Confirmed")
+
+cart=[]
+
+total=0
+
+render()
+
+document.getElementById("count").innerText=0
+
+}
+
+}
+
+let rzp=new Razorpay(options)
+
+rzp.open()
+
+}
+
 </script>
 
 </body>
+
+</html>
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>VELOUR Shopify Clone</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+
+<style>
+
+body{background:#050505;color:white;font-family:Arial;}
+
+.gold{color:#D4AF37}
+
+.card{background:#111;padding:10px;border-radius:12px;transition:0.3s}
+
+.card:hover{transform:scale(1.03)}
+
+input{color:black}
+
+.hidden{display:none}
+
+.btn{background:white;color:black;padding:6px 10px;border-radius:8px}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- TOP BAR -->
+
+<div class="flex justify-between p-4 border-b border-gray-800">
+
+<h1 class="gold text-xl">VELOUR</h1>
+
+<div class="space-x-2">
+
+<button onclick="showStore()">Store</button>
+
+<button onclick="showAdmin()">Admin</button>
+
+<button onclick="openCart()">🛒 <span id="count">0</span></button>
+
+</div>
+
+</div>
+
+<!-- ================= STORE ================= -->
+
+<div id="store" class="p-4">
+
+<h2 class="gold text-2xl mb-4">Luxury Streetwear Drops</h2>
+
+<div id="productList" class="grid md:grid-cols-3 gap-4"></div>
+
+</div>
+
+<!-- ================= ADMIN ================= -->
+
+<div id="admin" class="hidden p-4">
+
+<h2 class="gold text-xl mb-3">ADMIN PANEL</h2>
+
+<input id="img" placeholder="Image URL" class="p-2 mb-2 w-full"/>
+
+<input id="name" placeholder="Product Name" class="p-2 mb-2 w-full"/>
+
+<input id="price" placeholder="Price" class="p-2 mb-2 w-full"/>
+
+<button onclick="addProduct()" class="btn">Add Product</button>
+
+<hr class="my-4"/>
+
+<h3 class="gold">Products</h3>
+
+<div id="adminList"></div>
+
+</div>
+
+<!-- ================= CART ================= -->
+
+<div id="cart" class="hidden fixed right-0 top-0 w-80 h-full bg-black border-l border-gray-700 p-4">
+
+<h2 class="gold text-xl">Cart</h2>
+
+<div id="cartItems"></div>
+
+<p class="mt-4">Total: ₹<span id="total">0</span></p>
+
+<button onclick="pay()" class="btn w-full mt-3">Pay with UPI</button>
+
+<a id="wa" class="block text-green-400 mt-3">WhatsApp Order</a>
+
+<button onclick="closeCart()" class="mt-3 text-red-400">Close</button>
+
+</div>
+
+<script>
+
+let products = JSON.parse(localStorage.getItem("velour_products")) || [
+
+{img:"https://images.unsplash.com/photo-1542272604-787c3835535d",name:"Shadow Jeans",price:2299},
+
+{img:"https://images.unsplash.com/photo-1520975922284-7f5a4a2c6b52",name:"Ice Blue Jeans",price:2399}
+
+]
+
+let cart = []
+
+let total = 0
+
+// SAVE PRODUCTS
+
+function save(){
+
+localStorage.setItem("velour_products",JSON.stringify(products))
+
+}
+
+// RENDER STORE
+
+function renderStore(){
+
+document.getElementById("productList").innerHTML =
+
+products.map((p,i)=>`
+
+<div class="card">
+
+<img src="${p.img}" class="rounded h-40 w-full object-cover"/>
+
+<h3 class="mt-2">${p.name}</h3>
+
+<p class="text-gray-400">₹${p.price}</p>
+
+<button class="btn mt-2" onclick="addCart(${i})">Add</button>
+
+</div>
+
+`).join("")
+
+}
+
+// ADD PRODUCT (ADMIN)
+
+function addProduct(){
+
+let img = document.getElementById("img").value
+
+let name = document.getElementById("name").value
+
+let price = document.getElementById("price").value
+
+products.push({img,name,price})
+
+save()
+
+renderStore()
+
+renderAdmin()
+
+}
+
+// ADMIN LIST
+
+function renderAdmin(){
+
+document.getElementById("adminList").innerHTML =
+
+products.map((p)=>`
+
+<div class="card mt-2">
+
+${p.name} - ₹${p.price}
+
+</div>
+
+`).join("")
+
+}
+
+// CART
+
+function addCart(i){
+
+cart.push(products[i])
+
+total += Number(products[i].price)
+
+document.getElementById("count").innerText = cart.length
+
+renderCart()
+
+}
+
+function renderCart(){
+
+document.getElementById("cartItems").innerHTML =
+
+cart.map(i=>`<div>${i.name} - ₹${i.price}</div>`).join("")
+
+document.getElementById("total").innerText = total
+
+document.getElementById("wa").href =
+
+`https://wa.me/91XXXXXXXXXX?text=Order: ${cart.map(i=>i.name).join(", ")} Total ₹${total}`
+
+}
+
+// CART UI
+
+function openCart(){
+
+document.getElementById("cart").style.display="block"
+
+}
+
+function closeCart(){
+
+document.getElementById("cart").style.display="none"
+
+}
+
+// PAYMENT
+
+function pay(){
+
+if(cart.length==0){alert("Cart empty");return}
+
+let options = {
+
+key:"YOUR_RAZORPAY_KEY",
+
+amount: total*100,
+
+currency:"INR",
+
+name:"VELOUR",
+
+description:"Luxury Order",
+
+handler:function(){
+
+alert("Order Successful 🎉")
+
+cart=[]
+
+total=0
+
+document.getElementById("count").innerText=0
+
+renderCart()
+
+}
+
+}
+
+let rzp = new Razorpay(options)
+
+rzp.open()
+
+}
+
+// PAGE SWITCH
+
+function showAdmin(){
+
+document.getElementById("admin").style.display="block"
+
+document.getElementById("store").style.display="none"
+
+renderAdmin()
+
+}
+
+function showStore(){
+
+document.getElementById("admin").style.display="none"
+
+document.getElementById("store").style.display="block"
+
+renderStore()
+
+}
+
+// INIT
+
+renderStore()
+
+</script>
+
+</body>
+
 </html>
