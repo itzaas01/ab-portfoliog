@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A&B Admin Dashboard</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#050505;
+color:white;
+}
+
+header{
+background:#111;
+padding:20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+border-bottom:1px solid #d4af37;
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+color:#d4af37;
+}
+
+.container{
+padding:20px;
+}
+
+.card{
+background:#111;
+padding:20px;
+border-radius:15px;
+margin-bottom:20px;
+border:1px solid #222;
+}
+
+h2{
+color:#d4af37;
+margin-bottom:15px;
+}
+
+input,textarea,select{
+width:100%;
+padding:12px;
+margin:8px 0;
+background:#1a1a1a;
+border:none;
+border-radius:10px;
+color:white;
+}
+
+button{
+padding:12px 20px;
+background:#d4af37;
+border:none;
+border-radius:10px;
+font-weight:bold;
+cursor:pointer;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:15px;
+margin-top:20px;
+}
+
+.item{
+background:#111;
+padding:10px;
+border-radius:10px;
+text-align:center;
+}
+
+.item img{
+width:100%;
+border-radius:10px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">A&B Admin</div>
+<button onclick="logout()">Logout</button>
+</header>
+
+<div class="container">
+
+<div class="card">
+<h2>Upload Portfolio</h2>
+
+<input type="text" placeholder="Project Name">
+
+<select>
+<option>Wedding</option>
+<option>Fashion</option>
+<option>Product</option>
+<option>Reels</option>
+</select>
+
+<input type="file">
+
+<textarea placeholder="Description"></textarea>
+
+<button>Upload Project
